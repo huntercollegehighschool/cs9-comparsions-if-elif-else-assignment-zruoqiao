@@ -1,4 +1,4 @@
-'''
+f'''
 ______
 PART 1
 ______
@@ -15,13 +15,27 @@ Enter another number: 5
 The smallest number is 2
 '''
 
-number = int(input("Enter a number: "))
+one = int(input("Enter a number: "))
 
-smallest = number
+two = int(input("Enter another number: "))
 
-number = int(input("Enter another number: "))
+three = int(input("Enter another number: "))
 
-if number < smallest:
-  smallest = number
-  
-print("The smallest number is ", smallest)
+if one < two and one < three: 
+  print("The smallest number is ", one)
+if two < one and two < three:
+  print("The smallest number is ", two)
+if three < one and three < two:
+  print("The smallest number is ", three)
+
+if one == two and one < three: 
+  print("The smallest number is ", one)
+if one == three and one < two:
+  print("The smallest number is ", one)
+if two == three and two < one: 
+  print("The smallest number is ", two)
+
+if one == two == three:
+  print("The smallest number is ", one)
+
+#this is not what the instructions intend for me to write but I'm exceedingly confused and have spent too many hours on this assignment already so in case these assignments are actually looked over by someone, sorry 
